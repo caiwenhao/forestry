@@ -10,10 +10,10 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: mdx
-upload_dir: forestry/uploads
-public_path: https://static.fbtools.top/forestry/media
+upload_dir: public
+public_path: "/public"
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
