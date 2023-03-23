@@ -49,8 +49,8 @@ for page in published_pages:
     content = "---\n\n---\n" + content
 
     # 修复图片路径
-    content = re.sub(r'\!\\\[([^\]]+)]\(([^\)]+)\)', r'![\1](/images/\2)', content)
-    
+    content = re.sub(r'!\[([^\]]+)]\(([^\)]+)\)', r'![\1](/images/\2)', content)
+
     # 将修改后的内容写回文件
     with open(markdown_file, 'w', encoding='utf-8') as file:
         file.write(content)
